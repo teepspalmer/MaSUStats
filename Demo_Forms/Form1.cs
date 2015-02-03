@@ -20,6 +20,7 @@ namespace Demo_Forms
             InitializeComponent();
             BuildRoster();
             ShowRoster();
+            GetSavedStats();
         }
 
         private void BuildRoster()
@@ -40,6 +41,12 @@ namespace Demo_Forms
             {
                 Console.WriteLine(lstPlayers[i]);
             }
+        }
+
+        private void GetSavedStats()
+        {
+            lstStats = BasketballPlayerGameStatManager.DeserializeList();
+            UpdateStatsTable();
         }
 
         private void btnSave_Click(object sender, EventArgs e)
@@ -85,6 +92,8 @@ namespace Demo_Forms
 
             // 3.  Show the new stats in the table.
             UpdateStatsTable();
+
+            BasketballPlayerGameStatManager.SerializeList(lstStats);
             
         }
 

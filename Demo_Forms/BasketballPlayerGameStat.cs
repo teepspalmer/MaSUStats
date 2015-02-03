@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Demo_Forms
 {
-    class BasketballPlayerGameStat
+    public class BasketballPlayerGameStat
     {
         private string _playername;
         private int _fieldgoalattempts;

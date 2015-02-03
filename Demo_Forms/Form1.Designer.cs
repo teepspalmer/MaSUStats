@@ -330,53 +330,54 @@
             this.FreeThrowsMade,
             this.PersonalFoul,
             this.TechnicalFouls});
-            this.dgStats.Location = new System.Drawing.Point(13, 184);
+            this.dgStats.Location = new System.Drawing.Point(12, 183);
             this.dgStats.Name = "dgStats";
-            this.dgStats.ReadOnly = true;
             this.dgStats.Size = new System.Drawing.Size(668, 193);
             this.dgStats.TabIndex = 6;
+            this.dgStats.CellValueChanged += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgStats_CellValueChanged);
+            this.dgStats.UserDeletingRow += new System.Windows.Forms.DataGridViewRowCancelEventHandler(this.dgStats_UserDeletingRow);
             // 
             // Player
             // 
             this.Player.HeaderText = "Player";
             this.Player.Name = "Player";
-            this.Player.ReadOnly = true;
+            this.Player.Width = 150;
             // 
             // FieldGoalsAtt
             // 
-            this.FieldGoalsAtt.HeaderText = "FieldGoalsAtt";
+            this.FieldGoalsAtt.HeaderText = "FG Att";
             this.FieldGoalsAtt.Name = "FieldGoalsAtt";
-            this.FieldGoalsAtt.ReadOnly = true;
+            this.FieldGoalsAtt.Width = 75;
             // 
             // FieldGoalsMade
             // 
-            this.FieldGoalsMade.HeaderText = "FieldGoalsMade";
+            this.FieldGoalsMade.HeaderText = "FG Made";
             this.FieldGoalsMade.Name = "FieldGoalsMade";
-            this.FieldGoalsMade.ReadOnly = true;
+            this.FieldGoalsMade.Width = 80;
             // 
             // FreeThrowsAtt
             // 
-            this.FreeThrowsAtt.HeaderText = "FreeThrowsAtt";
+            this.FreeThrowsAtt.HeaderText = "FT Att";
             this.FreeThrowsAtt.Name = "FreeThrowsAtt";
-            this.FreeThrowsAtt.ReadOnly = true;
+            this.FreeThrowsAtt.Width = 75;
             // 
             // FreeThrowsMade
             // 
-            this.FreeThrowsMade.HeaderText = "FreeThrowsMade";
+            this.FreeThrowsMade.HeaderText = "FT Made";
             this.FreeThrowsMade.Name = "FreeThrowsMade";
-            this.FreeThrowsMade.ReadOnly = true;
+            this.FreeThrowsMade.Width = 75;
             // 
             // PersonalFoul
             // 
-            this.PersonalFoul.HeaderText = "PersonalFoul";
+            this.PersonalFoul.HeaderText = "PF";
             this.PersonalFoul.Name = "PersonalFoul";
-            this.PersonalFoul.ReadOnly = true;
+            this.PersonalFoul.Width = 75;
             // 
             // TechnicalFouls
             // 
-            this.TechnicalFouls.HeaderText = "TechnicalFouls";
+            this.TechnicalFouls.HeaderText = "TF";
             this.TechnicalFouls.Name = "TechnicalFouls";
-            this.TechnicalFouls.ReadOnly = true;
+            this.TechnicalFouls.Width = 75;
             // 
             // Form1
             // 

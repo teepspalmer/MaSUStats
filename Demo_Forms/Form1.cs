@@ -117,7 +117,46 @@ namespace Demo_Forms
 
         }
 
+        private void dgStats_UserDeletingRow(object sender, DataGridViewRowCancelEventArgs e)
+        {
+            int row = e.Row.Index;
+            lstStats.RemoveAt(row);
+            BasketballPlayerGameStatManager.SerializeList(lstStats);
+        }
 
+        private void dgStats_CellValueChanged(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex != -1)
+            {
+
+                if (e.ColumnIndex == 1)
+                {
+                    lstStats[e.RowIndex].FieldGoalsAttempted = int.Parse(dgStats.Rows[e.RowIndex].Cells[e.ColumnIndex].Value.ToString());
+                }
+                else if (e.ColumnIndex == 2)
+                {
+                    lstStats[e.RowIndex].FieldGoalsMade = int.Parse(dgStats.Rows[e.RowIndex].Cells[e.ColumnIndex].Value.ToString());
+                }
+                else if (e.ColumnIndex == 3)
+                {
+                    lstStats[e.RowIndex].FreeThrowAttempts = int.Parse(dgStats.Rows[e.RowIndex].Cells[e.ColumnIndex].Value.ToString());
+                }
+                else if (e.ColumnIndex == 4)
+                {
+                    lstStats[e.RowIndex].FreeThrowsMade = int.Parse(dgStats.Rows[e.RowIndex].Cells[e.ColumnIndex].Value.ToString());
+                }
+                else if (e.ColumnIndex == 6)
+                {
+                    lstStats[e.RowIndex].PersonalFouls = int.Parse(dgStats.Rows[e.RowIndex].Cells[e.ColumnIndex].Value.ToString());
+                }
+                else if (e.ColumnIndex == 7)
+                {
+                    lstStats[e.RowIndex].TechnicalFouls = int.Parse(dgStats.Rows[e.RowIndex].Cells[e.ColumnIndex].Value.ToString());
+                }
+
+                BasketballPlayerGameStatManager.SerializeList(lstStats);
+            }
+        }
 
 
 

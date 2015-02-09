@@ -63,6 +63,7 @@
             this.FreeThrowsMade = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.PersonalFoul = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TechnicalFouls = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnPlayers = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox4.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -379,11 +380,22 @@
             this.TechnicalFouls.Name = "TechnicalFouls";
             this.TechnicalFouls.Width = 75;
             // 
+            // btnPlayers
+            // 
+            this.btnPlayers.Location = new System.Drawing.Point(459, 47);
+            this.btnPlayers.Name = "btnPlayers";
+            this.btnPlayers.Size = new System.Drawing.Size(75, 23);
+            this.btnPlayers.TabIndex = 7;
+            this.btnPlayers.Text = "Players";
+            this.btnPlayers.UseVisualStyleBackColor = true;
+            this.btnPlayers.Click += new System.EventHandler(this.btnPlayers_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(716, 421);
+            this.Controls.Add(this.btnPlayers);
             this.Controls.Add(this.dgStats);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.chkWin);
@@ -447,6 +459,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn FreeThrowsMade;
         private System.Windows.Forms.DataGridViewTextBoxColumn PersonalFoul;
         private System.Windows.Forms.DataGridViewTextBoxColumn TechnicalFouls;
+        private System.Windows.Forms.Button btnPlayers;
     }
 }
 

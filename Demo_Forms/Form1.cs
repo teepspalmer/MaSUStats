@@ -13,6 +13,7 @@ namespace Demo_Forms
     public partial class Form1 : Form
     {
         private List<string> lstPlayers = new List<string>();
+        private List<Player> lstPlayerList = new List<Player>(); 
         private List<BasketballPlayerGameStat> lstStats = new List<BasketballPlayerGameStat>();
 
         public Form1()
@@ -157,6 +158,14 @@ namespace Demo_Forms
                 BasketballPlayerGameStatManager.SerializeList(lstStats);
             }
         }
+
+        private void btnPlayers_Click(object sender, EventArgs e)
+        {
+            PlayerForm pf = new PlayerForm();
+            pf.Show();
+        }
+
+        
 
 
 

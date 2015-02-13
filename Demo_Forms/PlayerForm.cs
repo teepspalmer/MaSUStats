@@ -40,6 +40,15 @@ namespace Demo_Forms
             p.HomeState = txtHomeState.Text;
 
             lstPlayers.Add(p);
+
+            txtFirstName.Clear();
+            txtLastName.Clear();
+            txtGender.Clear();
+            txtDOB.Clear();
+            txtHomeState.Clear();
+            txtHomeTown.Clear();
+
+            PlayerManager.SerializeList(lstPlayers);
             
 
         }

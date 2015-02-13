@@ -110,42 +110,42 @@
             this.txtLastName.Location = new System.Drawing.Point(101, 55);
             this.txtLastName.Name = "txtLastName";
             this.txtLastName.Size = new System.Drawing.Size(134, 20);
-            this.txtLastName.TabIndex = 1;
+            this.txtLastName.TabIndex = 2;
             // 
             // txtGender
             // 
             this.txtGender.Location = new System.Drawing.Point(101, 85);
             this.txtGender.Name = "txtGender";
             this.txtGender.Size = new System.Drawing.Size(134, 20);
-            this.txtGender.TabIndex = 1;
+            this.txtGender.TabIndex = 3;
             // 
             // txtDOB
             // 
             this.txtDOB.Location = new System.Drawing.Point(101, 115);
             this.txtDOB.Name = "txtDOB";
             this.txtDOB.Size = new System.Drawing.Size(134, 20);
-            this.txtDOB.TabIndex = 1;
+            this.txtDOB.TabIndex = 4;
             // 
             // txtHomeTown
             // 
             this.txtHomeTown.Location = new System.Drawing.Point(101, 145);
             this.txtHomeTown.Name = "txtHomeTown";
             this.txtHomeTown.Size = new System.Drawing.Size(134, 20);
-            this.txtHomeTown.TabIndex = 1;
+            this.txtHomeTown.TabIndex = 5;
             // 
             // txtHomeState
             // 
             this.txtHomeState.Location = new System.Drawing.Point(101, 175);
             this.txtHomeState.Name = "txtHomeState";
             this.txtHomeState.Size = new System.Drawing.Size(134, 20);
-            this.txtHomeState.TabIndex = 1;
+            this.txtHomeState.TabIndex = 6;
             // 
             // btnSave
             // 
             this.btnSave.Location = new System.Drawing.Point(59, 215);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(75, 23);
-            this.btnSave.TabIndex = 2;
+            this.btnSave.TabIndex = 7;
             this.btnSave.Text = "Save";
             this.btnSave.UseVisualStyleBackColor = true;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
@@ -155,7 +155,7 @@
             this.btnCancel.Location = new System.Drawing.Point(160, 215);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(75, 23);
-            this.btnCancel.TabIndex = 2;
+            this.btnCancel.TabIndex = 8;
             this.btnCancel.Text = "Cancel";
             this.btnCancel.UseVisualStyleBackColor = true;
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);

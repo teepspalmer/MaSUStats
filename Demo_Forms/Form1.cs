@@ -161,7 +161,7 @@ namespace Demo_Forms
 
         private void btnPlayers_Click(object sender, EventArgs e)
         {
-            PlayerForm pf = new PlayerForm();
+            PlayerForm pf = new PlayerForm(lstPlayerList);
             pf.Show();
         }
 
